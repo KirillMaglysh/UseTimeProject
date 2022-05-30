@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.EditDialog"
+    android:id="@+id/message_dialog_fragment"
+    tools:context=".ui.messaging.MessageDialog">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/Theme.EditDialogStaticContent.Label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/untrack_app_label" />
+
+    <TextView
+        android:id="@+id/dialog_message"
+        style="@style/Theme.EditDialogStaticContent.Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_title"
+        app:layout_constraintBottom_toTopOf="@id/dialog_button_set" />
+
+    <LinearLayout
+        android:id="@+id/dialog_button_set"
+        style="@style/Theme.EditDialogStaticContent.ButtonSet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/negative_dialog_button"
+            style="@style/Theme.EditDialogButton"
+            android:text="@string/edit_category_cancel_button" />
+
+        <Button
+            android:id="@+id/positive_dialog_button"
+            style="@style/Theme.EditDialogButton"
+            android:text="@string/edit_category_save_button" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

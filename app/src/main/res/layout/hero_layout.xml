@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+>
+
+    <LinearLayout
+            android:id="@+id/hero_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+    >
+
+        <include
+                android:id="@+id/scale_level6"
+                layout="@layout/scale_item"
+        />
+
+        <include
+                android:id="@+id/scale_level5"
+                layout="@layout/scale_item"
+        />
+
+        <include
+                android:id="@+id/scale_level4"
+                layout="@layout/scale_item"
+        />
+
+        <include
+                android:id="@+id/scale_level3"
+                layout="@layout/scale_item"
+        />
+
+        <include
+                android:id="@+id/scale_level2"
+                layout="@layout/scale_item"
+        />
+
+        <include
+                android:id="@+id/scale_level1"
+                layout="@layout/scale_item"
+        />
+
+        <include
+                android:id="@+id/scale_level0"
+                layout="@layout/scale_item"
+        />
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/cat_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/laughtingoutloud_64x64"
+            android:scaleType="fitCenter"
+            android:layout_weight="9"
+            android:contentDescription="@string/cat_image_content_description"
+            android:layout_marginBottom="@dimen/cat_image_margin"
+            android:layout_marginTop="@dimen/cat_image_margin"
+    />
+
+    <!--TODO заменить на список предметов-->
+    <!--
+        <LinearLayout
+                android:id="@+id/cats_things"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+        >
+            <TextView
+                    android:id="@+id/left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="1"
+            />
+        </LinearLayout>
+    -->
+</LinearLayout>

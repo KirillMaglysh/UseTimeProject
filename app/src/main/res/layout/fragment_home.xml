@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.home.HomeFragment">
+
+    <include
+            android:id="@+id/hero_state_layout"
+            layout="@layout/hero_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+    />
+
+    <TextView
+            android:id="@+id/motivation_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="''...'' \n— Kirill Maglysh"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="10dp"
+    />
+
+    <!-- TODO Заменить на текущую статистику за день-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3"
+    >
+
+        <include
+                android:id="@+id/today_summary"
+                layout="@layout/short_summary_card"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+        />
+
+        <include
+                android:id="@+id/yesterday_summary"
+                layout="@layout/short_summary_card"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+        />
+    </LinearLayout>
+</LinearLayout>

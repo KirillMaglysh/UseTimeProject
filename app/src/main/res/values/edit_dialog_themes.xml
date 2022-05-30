@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.EditDialog" parent="Theme.MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/fragment_padding</item>
+        <item name="android:background">?attr/background</item>
+    </style>
+
+    <style name="Theme.EditDialog.Warning">
+        <item name="android:background">@drawable/warning_dialog_background</item>
+    </style>
+
+    <style name="Theme.EditDialogField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/edit_dialog_title_padding_bottom</item>
+        <item name="android:textAppearance">@style/Theme.Text.Primary.Bold</item>
+    </style>
+
+    <style name="Theme.EditDialogField.Text">
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="Theme.EditDialogStaticContent" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.EditDialogStaticContent.Title">
+        <item name="android:paddingBottom">@dimen/edit_dialog_title_padding_bottom</item>
+        <item name="android:textAppearance">@style/Theme.Text.Primary.Bold</item>
+    </style>
+
+    <style name="Theme.EditDialogStaticContent.Label">
+        <item name="android:paddingBottom">@dimen/edit_dialog_desc_padding_bottom</item>
+        <item name="android:textAppearance">@style/Theme.Text.Secondary</item>
+    </style>
+
+    <style name="Theme.EditDialogStaticContent.ButtonSet">
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="Theme.EditDialogButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">@dimen/zero_dimen</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/primary_text_size</item>
+    </style>
+
+    <style name="Theme.EditTimeLimitDialog" parent="" />
+
+    <style name="Theme.EditTimeLimitDialog.DayText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Theme.EditTimeLimitDialog.DayText.Desc">
+        <item name="android:textAppearance">@style/Theme.Text.Secondary</item>
+    </style>
+
+    <style name="Theme.EditTimeLimitDialog.DayText.Field">
+        <item name="android:textAppearance">@style/Theme.Text.Primary.Bold</item>
+    </style>
+
+    <style name="Theme.EditTimeLimitDialog.DayCell">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Android SQLite" uuid="32d632f1-defa-4370-aabc-a3186a9da065">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Kirill\AppData\Local\JetBrains\IntelliJIdea2022.1\android\databases\EMULATOR_Nexus_5_API_30\ru.mksoft.android.use.time.use.time.use.time.motivator\internal\use_time_motivator.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.36.0.3/sqlite-jdbc-3.36.0.3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Android SQLite" uuid="4b1a94db-d2d1-477f-b482-1fd3c52dd8a9">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Kirill\AppData\Local\JetBrains\IntelliJIdea2022.1\android\databases\EMULATOR_Nexus_5_API_30\ru.mksoft.android.use.time.use.time.use.time.motivator\internal\use_time_motivator.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

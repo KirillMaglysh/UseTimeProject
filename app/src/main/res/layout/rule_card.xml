@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.CardView.Outer">
+
+    <LinearLayout style="@style/Theme.CardView.InnerLayout">
+
+        <include layout="@layout/rule_body" />
+
+        <Button
+            android:id="@+id/rule_edit_button"
+            style="@style/Theme.CardButtonEdit" />
+
+        <Button
+            android:id="@+id/rule_delete_button"
+            style="@style/Theme.CardButtonRemove" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

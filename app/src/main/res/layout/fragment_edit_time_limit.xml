@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.EditDialog"
+    tools:context=".ui.planning.rulelist.EditTimeLimitFragment">
+
+    <TextView
+        android:id="@+id/edit_time_limit_label"
+        style="@style/Theme.EditDialogStaticContent.Label" />
+
+    <TextView
+        android:id="@+id/edit_time_limit_title"
+        style="@style/Theme.EditDialogField.Text" />
+
+    <TimePicker
+        android:id="@+id/time_limit_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:timePickerMode="spinner" />
+
+    <LinearLayout style="@style/Theme.EditDialogStaticContent.ButtonSet">
+
+        <Button
+            android:id="@+id/cancel_rule_edition_button"
+            style="@style/Theme.EditDialogButton"
+            android:text="@string/edit_category_cancel_button" />
+
+        <Button
+            android:id="@+id/confirm_rule_edition_button"
+            style="@style/Theme.EditDialogButton"
+            android:text="@string/edit_category_save_button" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   style="@style/Theme.MatchParent"
+                                                   tools:context=".ui.stats.short_stats.ShortStatsListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/short_stats_period_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/stats_list_recycler_view"
+    >
+        <Spinner
+                android:id="@+id/period_type_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:entries="@array/statsPeriods"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/date_text"
+        >
+
+        </Spinner>
+
+        <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/period_type_spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                android:text="0000-00-00"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stats_list_recycler_view"
+            style="@style/Theme.ListRecyclerView"
+            tools:listitem="@layout/category_short_stats_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/short_stats_period_layout"/>
+
+    <include
+            android:id="@+id/short_stats_list_progress_window"
+            layout="@layout/progress_window"
+            android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
