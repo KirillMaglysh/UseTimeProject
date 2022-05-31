@@ -50,7 +50,11 @@ public class ShortStatsListFragment extends Fragment implements StatsProcessedLi
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentShortStatsListBinding.inflate(inflater, container, false);
         if (currentPeriodID == DAY_PERIOD_ID) {
-            binding.dateText.setEnabled(true);
+            binding.dateText.setVisibility(View.VISIBLE);
+            binding.periodTypeSpinner.setSelection(DAY_PERIOD_ID);
+        } else {
+            binding.dateText.setVisibility(View.INVISIBLE);
+            binding.periodTypeSpinner.setSelection(WEEK_PERIOD_ID);
         }
 
         setDateText();
