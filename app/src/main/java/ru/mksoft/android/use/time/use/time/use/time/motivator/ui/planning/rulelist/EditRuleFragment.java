@@ -127,7 +127,12 @@ public class EditRuleFragment extends BottomSheetDialogFragment {
 
         String ruleName = rule.getName();
         if (ruleName == null || TextUtils.isEmpty(ruleName)) {
-            ruleName = getString(R.string.edit_time_limit_no_name_rule);
+            if (TextUtils.isEmpty(String.valueOf(binding.editRuleLabel.getText()))) {
+                ruleName = getString(R.string.edit_time_limit_no_name_rule);
+            } else {
+                ruleName = String.valueOf(binding.editRuleLabel.getText());
+            }
+
         }
 
         navController.navigate(EditRuleFragmentDirections.actionNavEditRuleToFragmentEditTimeLimit(dayOfWeek.name(), ruleName, ruleDay, rule.getHoursLimitTime(dayOfWeek), rule.getMinutesLimitTime(dayOfWeek)));
